@@ -8,12 +8,12 @@
 <body class="page__body">
   <header class="main-header">
     <div class="logo">
-      <a class="logo-icon" href="index.html">
-        <img class="logo-icon__picture" src="../source/img/logo-mobile-img.svg" width="33" height="38"
+      <a class="logo__icon" href="#">
+        <img class="logo__picture" src="./img/logo-mobile-img.svg" width="33" height="38"
           alt="Кэт Энерджи">
       </a>
-      <a class="logo-text" href="#">
-        <img class="logo-text__description" src="../source/img/logo-mobile-text.svg" width="101" height="18"
+      <a class="logo__text" href="#">
+        <img class="logo__description" src="./img/logo-mobile-text.svg" width="101" height="18"
           alt="Кэт Энерджи питание для котов">
       </a>
     </div>
@@ -23,13 +23,13 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="index.html">ГЛАВНАЯ</a>
+            <a class="main-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link">ПОДБОР ПРОГРАММЫ</a>
+            <a class="main-navigation__link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -38,21 +38,21 @@
   <main class="main-selection">
     <section class="selection-container">
       <h1 class="selection-container__title">Подбор программы</h1>
-      <p class="selection-container__text">ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА</p>
-      <form class="selection-container__form" action="https://echo.htmlacademy.ru/" method="get">
+      <p class="selection-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="selection-container__form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="selection-container__data">
           <fieldset class="field">
             <legend class="visually-hidden">Форма ввода данных для анкеты.</legend>
             <label class="field__form">
-              <span class="field__text">ИМЯ:*</span>
-              <input class="field__text-input" type="text" name="text" placeholder="БАРСИК" required>
+              <span class="field__text">Имя:*</span>
+              <input class="field__text-input" type="text" name="text" placeholder="Барсик" required>
             </label>
             <label class="field__form">
-              <span class="field__text">ВЕС (КГ):*</span>
+              <span class="field__text">Вес (кг):*</span>
               <input class="field__text-input" type="text" name="text" placeholder="7" required>
             </label>
             <label class="field__form">
-              <span class="field__text">ВОЗРАСТ (ЛЕТ):</span>
+              <span class="field__text">Возраст (лет):</span>
               <input class="field__text-input" type="text" name="text" placeholder="7" required>
             </label>
           </fieldset>
@@ -63,28 +63,28 @@
             <label class="field__form-tick">
               <input class="visually-hidden field__checked" name="checkbox" type="radio" checked>
               <span class="field__mark"></span>
-              <span class="field__text-checked">ПОХУДЕНИЕ</span>
+              <span class="field__text-checked">Похудение</span>
             </label>
             <label class="field__form-tick">
               <input class="visually-hidden field__checked" name="checkbox" type="radio">
               <span class="field__mark"></span>
-              <span class="field__text-checked">НАБОР МАССЫ</span>
+              <span class="field__text-checked">Набор массы</span>
             </label>
             <label class="field__form-tick">
               <input class="visually-hidden field__checked" name="checkbox" type="radio">
               <span class="field__mark"></span>
-              <span class="field__text-checked">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
+              <span class="field__text-checked">Не знаю (Нужен ваш совет)</span>
             </label>
           </fieldset>
         </div>
         <fieldset class="selection-container__contacts">
           <h3 class="title-line title-line--width">Контактные данные (владельца кота)</h3>
           <label class="form-type">
-            <span class="form-type__text">E-MAIL:*</span>
-            <input class="form-type__input" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+            <span class="form-type__text">E-mail:*</span>
+            <input class="form-type__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form-type">
-            <span class="form-type__text">ТЕЛЕФОН:*</span>
+            <span class="form-type__text">Телефон:*</span>
             <input class="form-type__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
@@ -102,34 +102,34 @@
               <label class="form-list__add">
                 <input class="form-list__checkbox" type="checkbox" name="additionally" checked>
                 <span class="form-list__mark"></span>
-                <span class="visually-hidden form-list__text">САХАРОЗАМЕНИТЕЛЬ</span>
+                <span class="visually-hidden form-list__text">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form-list__item">
               <label class="form-list__add">
                 <input class="form-list__checkbox" type="checkbox" name="additionally">
                 <span class="form-list__mark"></span>
-                <span class="visually-hidden form-list__text">МОЛОКО</span>
+                <span class="visually-hidden form-list__text">Молоко</span>
               </label>
             </li>
             <li class="form-list__item">
               <label class="form-list__add">
                 <input class="form-list__checkbox" type="checkbox" name="additionally">
                 <span class="form-list__mark"></span>
-                <span class="visually-hidden form-list__text">ПИТЬЕВАЯ ВОДА</span>
+                <span class="visually-hidden form-list__text">Питьева вода</span>
               </label>
             </li>
             <li class="form-list__item">
               <label class="form-list__add">
                 <input class="form-list__checkbox" type="checkbox" name="additionally">
                 <span class="form-list__mark"></span>
-                <span class="visually-hidden form-list__text">ВИТАМИНЫ</span>
+                <span class="visually-hidden form-list__text">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <div class="selection-container__button">
-          <button class="selection-container__submit" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+          <button class="selection-container__submit" type="submit">Отправить заявку</button>
         </div>
         <div class="selection-container__small">
           <small class="selection-container__legend">
@@ -143,19 +143,19 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты.</h2>
       <div class="contacts__location">
-        <p class="contacts__text">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</p>
+        <p class="contacts__text">Приглашаеем к сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <div class="contacts__map contacts__map--indicator">
+      <div class="contacts__map">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab62959ef667241e2b293ed09d29722cf3b560fbfff6b78a7dd03882ffb35ea41&amp;source=constructor"
           width="320" height="362"></iframe>
       </div>
     </section>
     <div class="main-footer__wrapper">
-      <div class="main-footer__logo">
-        <a class="logo-text" href="index.html">
-          <img class="logo-text__description" src="../source/img/logo-mobile-text.svg" width="101" height="18"
+      <div class="main-footer__logo logo">
+        <a class="logo__text" href="#">
+          <img class="logo__description" src="./img/logo-mobile-text.svg" width="101" height="18"
             alt="Кэт Энерджи питание для котов">
         </a>
       </div>
@@ -176,8 +176,9 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__text">HTML Academy</p>
+        </a>
       </div>
     </div>
   </footer>
