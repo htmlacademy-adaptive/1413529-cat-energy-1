@@ -1,0 +1,287 @@
+.catalog__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(1, 280px);
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__item {
+  display: grid;
+  grid-template-rows: repeat(2, auto) 1fr;
+  grid-template-columns: repeat(2, 140px);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    border: 1px solid #ebebeb;
+    left: -20px;
+  }
+}
+
+.catalog__item:not(:first-child) {
+  margin-top: 25px;
+}
+
+.catalog__image-wrapper {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.catalog__title {
+  margin: 0;
+  color: #222222;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  width: 76px;
+  margin-bottom: 14px;
+  padding-top: 20px;
+}
+
+.catalog__description-list {
+  display: grid;
+  grid-template-columns: repeat(2, 70px);
+  margin: 0;
+  color: #444444;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog__description-list--value,
+.catalog__description-list--name {
+  text-align: right;
+}
+
+.catalog-item__button-wrapper {
+  width: 100%;
+  margin-top: 17px;
+}
+
+.catalog__button {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.4s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.catalog__add {
+  position: relative;
+  margin-top: 25px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    border: 1px solid #ebebeb;
+    left: -20px;
+  }
+}
+
+.catalog__add-wrapper {
+  position: relative;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.catalog__add-text {
+  margin: 0;
+}
+
+.catalog__add-text--product {
+  color: #111111;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 23px;
+}
+
+.catalog__add-text--taste {
+  color: #444444;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.catalog__link-wrapper {
+  width: 280px;
+  height: 40px;
+  padding: 10px 50px;
+  background-color: #f2f2f2;
+  margin-top: 21px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+
+  &:hover:active {
+    background-color: #ebebeb;
+  }
+}
+
+.catalog__button-link {
+  color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.catalog-additional__title-item {
+  margin: 0;
+  padding-top: 11px;
+  color: #222222;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+}
+
+.catalog-additional {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    border: 1px solid #ebebeb;
+    left: -20px;
+  }
+}
+
+.catalog-additional__list {
+  padding: 36px 0 0 0;
+  list-style-type: none;
+  margin: 0;
+  display: grid;
+}
+
+.catalog-additional__item {
+  width: 280px;
+  border-top: 1px solid #cdcdcd;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.catalog-additional__item:last-child {
+  width: 280px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 18px;
+}
+
+
+.catalog-additional__title {
+  color: #000000;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 25px;
+}
+
+.catalog-additional__options {
+  display: inline-block;
+  color: #444444;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 13px 0 15px 0;
+}
+
+.catalog-additional__options--value {
+  text-align: right;
+}
+
+.catalog-additional__button {
+  display: block;
+  color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 10px;
+  text-align: center;
+  transition: background-color 0.4s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.catalog-additional__promo {
+  background-image: url("../../img/cat-bag-gift.jpg");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 290px;
+  margin: 35px 0 35px 0;
+  border-top: 1px solid #cdcdcd;
+  position: relative;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icons/gift.svg");
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+    top: 60px;
+    left: 100px;
+  }
+}
+
+.catalog-additional__promo-text {
+  color: #ffffff;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 187px 61px 43px 58px;
+}

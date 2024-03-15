@@ -1,0 +1,81 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 0 20px 40px 20px;
+}
+
+.slider__picture {
+  width: 140px;
+}
+
+.slider__image--fat {
+  clip-path: polygon(4.17% 3.87%, 49.32% 3.25%, 50% 99.07%, 2.49% 96.49%);
+}
+
+.slider__image--slim {
+  clip-path: polygon(50.22% 0%, 93.8% 1.65%, 96.71% 98.33%, 50.67% 99.8%);
+}
+
+.slider__picture--after {
+  position: absolute;
+  content: "";
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: #666666;
+  left: 158px;
+  z-index: 1;
+}
+
+.slider:hover::before {
+  background-color: #68b738;
+}
+
+.slider:active::before {
+  background-color: #5eaa2f;
+}
+
+.slider-range {
+  position: relative;
+}
+
+.slider-range__button {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  content: "";
+  top: -25px;
+  right: -20px;
+  z-index: 1;
+}
+
+.slider-range__button-image {
+  stroke: #666666;
+  fill: #ffffff;
+}
+
+.slider-range__button-image:hover {
+  stroke: #68b738;
+}
+
+.slider-range__button-image:active {
+  stroke: #5eaa2f;
+}
+
+.slider-range__button-path:hover {
+  fill: #68b738;
+}
+
+.slider-range__button-path:active {
+  fill: #5eaa2f;
+}

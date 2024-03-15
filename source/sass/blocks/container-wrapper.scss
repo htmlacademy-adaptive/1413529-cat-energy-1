@@ -1,0 +1,17 @@
+.container-wrapper {
+  margin-top: 25px;
+}
+
+.container-wrapper__catalog {
+  position: relative;
+  margin-top: 25px;
+
+  &::before {
+    width: 54px;
+    border: 2px solid #68b738;
+    position: absolute;
+    content: "";
+    top: 40px;
+    right: -20px;
+  }
+}

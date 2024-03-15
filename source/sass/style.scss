@@ -1,5 +1,24 @@
 // Начните писать стили здесь
-body {
-  background: #ff0000;
-}
-
+@import "./global/fonts.scss";
+@import "./blocks/page.scss";
+@import "./global/global.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-container";
+@import "./blocks/selection.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/features.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/main-selection.scss";
+@import "./blocks/selection-container";
+@import "./blocks/field.scss";
+@import "./blocks/form-list.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-inner.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/container-wrapper.scss";
