@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__icon {
+  display: inline-block;
+  margin-right: 56px;
+  transition: opacity 0.4s, visibility 0.4s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logo__icon:active {
+  opacity: 0.6;
+}
+
+.logo__text {
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logo__text:active {
+  opacity: 0.6;
+}

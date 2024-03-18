@@ -1,0 +1,16 @@
+.social__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social__link:focus:hover {
+  opacity: 0.8;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}

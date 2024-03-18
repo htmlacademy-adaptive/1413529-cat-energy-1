@@ -1,0 +1,74 @@
+.main-navigation {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.main-navigation__toggle {
+  background-image: url("../../img/icons/button-open-menu.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.main-navigation__toggle-close {
+  background-image: url("../../img/icons/button-close-menu.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  top: -30px;
+  right: 20px;
+  border: none;
+}
+
+.main-navigation__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 320px;
+  background-color: #ffffff;
+  margin: 0;
+  content: "";
+  right: -20px;
+  top: 35px;
+  padding-top: 15px;
+}
+
+.main-navigation__wrapper-close {
+  display: none;
+}
+
+.main-navigation__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-navigation__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-navigation__link {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,37 @@
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666666;
+}
+
+.copyright__link:focus .copyright__image {
+  color: #68b738;
+}
+
+.copyright__link:hover .copyright__image {
+  color: #68b738;
+}
+
+.copyright__link:active .copyright__image {
+  color: rgba(104, 183, 56, 0.3);
+}
+
+.copyright__text {
+  color: #444444;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+
+  &:focus:hover {
+    color: #444444;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

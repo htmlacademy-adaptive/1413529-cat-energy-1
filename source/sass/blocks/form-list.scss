@@ -1,0 +1,56 @@
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-list__mark {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    border: 1px solid rgba(186, 186, 186, 0.3);
+  }
+}
+
+.form-list__text {
+  display: inline-block;
+  padding: 6px 0 6px 15px;
+  overflow: hidden;
+
+  &:disabled {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form-list__add {
+  position: relative;
+}
+
+.form-list__checkbox[type="checkbox"]:checked + .form-list__mark::before,
+.form-list__checkbox[type="checkbox"]:checked + .form-list__mark::after {
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  content: "";
+  left: 2px;
+}
