@@ -1,10 +1,26 @@
 .main-header {
   display: flex;
   padding: 13px 20px 0 20px;
-  width: 320px;
-  background-color: #ffffff;
+  width: 100%;
+  background-color: $basicwhite;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 14px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px 0 30px;
+    width: 100%;
+    background-color: $basicwhite;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 55px 110px 0 110px;
+    width: 100%;
+  }
 }

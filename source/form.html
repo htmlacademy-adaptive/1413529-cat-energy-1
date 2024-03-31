@@ -23,7 +23,7 @@
       <div class="main-navigation__wrapper main-navigation__wrapper-close">
         <!--main-navigation__wrapper-close закрывает меню-->
         <button class="main-navigation__toggle-close" type="button"><span class="visually-hidden">Закрыть
-          меню.</span></button>
+            меню.</span></button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="index.html">Главная</a>
@@ -43,116 +43,120 @@
       <h1 class="selection-container__title">Подбор программы</h1>
       <p class="selection-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="selection-container__form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="selection-container__data">
-          <fieldset class="field">
-            <legend class="visually-hidden">Форма ввода данных для анкеты.</legend>
-            <label class="field__form">
-              <span class="field__text">Имя:*</span>
-              <input class="field__text-input field__text-input--name" type="text" name="text" placeholder="Барсик"
-                required>
-            </label>
-            <label class="field__form">
-              <span class="field__text">Вес (кг):*</span>
-              <input class="field__text-input field__text-input--weight" type="text" name="text" placeholder="7"
-                required>
-            </label>
-            <label class="field__form">
-              <span class="field__text">Возраст (лет):</span>
-              <input class="field__text-input field__text-input--years" type="text" name="text" placeholder="7"
-                required>
-            </label>
+        <div class="selection-container__wrapper">
+          <div class="selection-container__data">
+            <fieldset class="field">
+              <legend class="visually-hidden">Форма ввода данных для анкеты.</legend>
+              <label class="field__form">
+                <span class="field__text">Имя:*</span>
+                <input class="field__text-input field__text-input--name" type="text" name="text" placeholder="Барсик"
+                  required>
+              </label>
+              <label class="field__form">
+                <span class="field__text">Вес (кг):*</span>
+                <input class="field__text-input field__text-input--weight" type="text" name="text" placeholder="7"
+                  required>
+              </label>
+              <label class="field__form">
+                <span class="field__text">Возраст (лет):</span>
+                <input class="field__text-input field__text-input--years" type="text" name="text" placeholder="7"
+                  required>
+              </label>
+            </fieldset>
+          </div>
+          <div class="selection-container__data-selection">
+            <fieldset class="field-selection">
+              <legend class="visually-hidden">Выбор данных для анкеты.</legend>
+              <label class="field__form-tick">
+                <input class="visually-hidden field__checked" type="radio" name="selection-data" value="slim-group"
+                  checked>
+                <span class="field__mark"></span>
+                <span class="field__text-checked">Похудение</span>
+              </label>
+              <label class="field__form-tick">
+                <input class="visually-hidden field__checked" type="radio" name="selection-data" value="weight-group">
+                <span class="field__mark"></span>
+                <span class="field__text-checked">Набор массы</span>
+              </label>
+              <label class="field__form-tick">
+                <input class="visually-hidden field__checked" type="radio" name="selection-data" value="advice-group">
+                <span class="field__mark"></span>
+                <span class="field__text-checked">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </fieldset>
+          </div>
+          <fieldset class="selection-container__contacts">
+            <h3 class="selection-container__title-line">Контактные данные (владельца кота)</h3>
+            <div class="selection-container__form-wrapper">
+              <label class="selection-container__form-type selection-container__form-type-contacts">
+                <span class="selection-container__form-type-text">E-mail:*</span>
+                <input class="selection-container__form-type-input" type="email" name="email"
+                  placeholder="kuklachev@gmail.com" required>
+                <svg aria-hidden="true" focusable="false" class="selection-container__image-box" width="20" height="20"
+                  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
+                    stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </label>
+              <label class="selection-container__form-type">
+                <span class="selection-container__form-type-text">Телефон:*</span>
+                <input class="selection-container__form-type-input selection-container__tel" type="tel" name="tel"
+                  placeholder="8 (960) 900-60-90" required>
+                <svg aria-hidden="true" focusable="false" class="selection-container__image-connection" width="20"
+                  height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
+                    stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </label>
+            </div>
           </fieldset>
-        </div>
-        <div class="selection-container__data-selection">
-          <fieldset class="field-selection">
-            <legend class="visually-hidden">Выбор данных для анкеты.</legend>
-            <label class="field__form-tick">
-              <input class="visually-hidden field__checked" type="radio" name="selection-data" value="slim-group"
-                checked>
-              <span class="field__mark"></span>
-              <span class="field__text-checked">Похудение</span>
+          <div class="selection-container__information">
+            <h3 class="selection-container__title-line">Комментарий</h3>
+            <label class="selection-container__form-text" for="information">
+              <textarea class="selection-container__form-textarea" name="information" id="information" cols="33"
+                rows="8" maxlength="30" spellcheck="true" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
-            <label class="field__form-tick">
-              <input class="visually-hidden field__checked" type="radio" name="selection-data" value="weight-group">
-              <span class="field__mark"></span>
-              <span class="field__text-checked">Набор массы</span>
-            </label>
-            <label class="field__form-tick">
-              <input class="visually-hidden field__checked" type="radio" name="selection-data" value="advice-group">
-              <span class="field__mark"></span>
-              <span class="field__text-checked">Не знаю (Нужен ваш совет)</span>
-            </label>
+          </div>
+          <fieldset class="selection-container__block-add">
+            <h3 class="selection-container__title-line">Дополнительно</h3>
+            <ul class="form-list">
+              <li class="form-list__item">
+                <label class="form-list__add">
+                  <input class="visually-hidden form-list__checkbox" type="checkbox" name="additionally" checked>
+                  <span class="form-list__mark"></span>
+                  <span class="form-list__text">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="form-list__item">
+                <label class="form-list__add">
+                  <input class="visually-hidden form-list__checkbox" type="checkbox" name="additionally">
+                  <span class="form-list__mark"></span>
+                  <span class="form-list__text">Питьева вода</span>
+                </label>
+              </li>
+              <li class="form-list__item">
+                <label class="form-list__add">
+                  <input class="visually-hidden form-list__checkbox" type="checkbox" name="additionally">
+                  <span class="form-list__mark"></span>
+                  <span class="form-list__text">Молоко</span>
+                </label>
+              </li>
+              <li class="form-list__item">
+                <label class="form-list__add">
+                  <input class="visually-hidden form-list__checkbox" type="checkbox" name="additionally">
+                  <span class="form-list__mark"></span>
+                  <span class="form-list__text">Витамины</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
-        </div>
-        <fieldset class="selection-container__contacts">
-          <h3 class="selection-container__title-line">Контактные данные (владельца кота)</h3>
-          <label class="selection-container__form-type selection-container__form-type-contacts">
-            <span class="selection-container__form-type-text">E-mail:*</span>
-            <input class="selection-container__form-type-input" type="email" name="email"
-              placeholder="kuklachev@gmail.com" required>
-            <svg aria-hidden="true" focusable="false" class="selection-container__image-box" width="20" height="20"
-              viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
-                stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </label>
-          <label class="selection-container__form-type">
-            <span class="selection-container__form-type-text">Телефон:*</span>
-            <input class="selection-container__form-type-input selection-container__tel" type="tel" name="tel"
-              placeholder="8 (960) 900-60-90" required>
-            <svg aria-hidden="true" focusable="false" class="selection-container__image-connection" width="20"
-              height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
-                stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </label>
-        </fieldset>
-        <div class="selection-container__information">
-          <h3 class="selection-container__title-line">Комментарий</h3>
-          <label class="selection-container__form-text" for="information">
-            <textarea class="selection-container__form-textarea" name="information" id="information" cols="33" rows="8"
-              maxlength="30" spellcheck="true" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
-        </div>
-        <fieldset class="selection-container__block-add">
-          <h3 class="selection-container__title-line">Дополнительно</h3>
-          <ul class="form-list">
-            <li class="form-list__item">
-              <label class="form-list__add">
-                <input class="visually-hidden form-list__checkbox" type="checkbox" name="additionally" checked>
-                <span class="form-list__mark"></span>
-                <span class="form-list__text">Сахарозаменитель</span>
-              </label>
-            </li>
-            <li class="form-list__item">
-              <label class="form-list__add">
-                <input class="visually-hidden form-list__checkbox" type="checkbox" name="additionally">
-                <span class="form-list__mark"></span>
-                <span class="form-list__text">Молоко</span>
-              </label>
-            </li>
-            <li class="form-list__item">
-              <label class="form-list__add">
-                <input class="visually-hidden form-list__checkbox" type="checkbox" name="additionally">
-                <span class="form-list__mark"></span>
-                <span class="form-list__text">Питьева вода</span>
-              </label>
-            </li>
-            <li class="form-list__item">
-              <label class="form-list__add">
-                <input class="visually-hidden form-list__checkbox" type="checkbox" name="additionally">
-                <span class="form-list__mark"></span>
-                <span class="form-list__text">Витамины</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="selection-container__button">
-          <button class="selection-container__submit button" type="submit">Отправить заявку</button>
-          <small class="selection-container__legend">
-            * — Обязательные поля
-          </small>
+          <div class="selection-container__button">
+            <button class="selection-container__submit button" type="submit">Отправить заявку</button>
+            <small class="selection-container__legend">
+              * — Обязательные поля
+            </small>
+          </div>
         </div>
       </form>
     </section>
@@ -162,12 +166,17 @@
       <h2 class="visually-hidden">Контакты.</h2>
       <div class="contacts__location selection-container__background">
         <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__address">
+          <p class="contacts__street">
+            ул. Большая Конюшенная, д. 19/8
+          </p>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </div>
       </div>
       <div class="contacts__map">
         <iframe aria-hidden="true" frameborder="0" title="Карта с адресом нахождения Кэт энерджи"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab62959ef667241e2b293ed09d29722cf3b560fbfff6b78a7dd03882ffb35ea41&amp;source=constructor"
-          width="320" height="362">
+          width="100%" height="362">
         </iframe>
       </div>
     </section>
@@ -223,7 +232,7 @@
             </g>
             <defs>
               <clipPath id="clip0_108484_344">
-                <rect width="27" height="34" fill="white" />
+                <rect width="27" height="34" fill="white"/>
               </clipPath>
             </defs>
           </svg>

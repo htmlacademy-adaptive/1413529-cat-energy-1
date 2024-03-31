@@ -22,6 +22,10 @@
   line-height: 18px;
   text-transform: uppercase;
   white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
 }
 
 .field__text-input {
@@ -46,19 +50,31 @@
 }
 
 .field__text-input:invalid {
-  border: 2px solid 2px #ff8282;
+  border: 2px solid #ff8282;
 }
 
 .field__text-input--name {
   width: 228px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .field__text-input--weight {
   width: 207px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .field__text-input--years {
   width: 173px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .field__checked {

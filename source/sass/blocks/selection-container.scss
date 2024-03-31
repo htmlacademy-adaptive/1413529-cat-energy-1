@@ -1,3 +1,17 @@
+@media (min-width: $tablet-width) {
+  .selection-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .selection-container__title {
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
@@ -8,6 +22,12 @@
   margin-top: 27px;
   margin-bottom: 0;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 65px;
+  }
 }
 
 .selection-container__text {
@@ -21,10 +41,26 @@
   margin-top: 37px;
   margin-bottom: 39px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 323px;
+    margin-top: 54px;
+    margin-bottom: 66px;
+  }
 }
 
 .selection-container__data {
   padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-container__data {
+    width: 46%;
+  }
 }
 
 .selection-container__data-selection {
@@ -33,6 +69,18 @@
   padding-top: 22px;
   padding-bottom: 19px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #e7e7e7;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-container__data-selection {
+    width: 46%;
+  }
 }
 
 .selection-container__contacts {
@@ -54,6 +102,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .selection-container__contacts {
+    display: flex;
+    width: 100%;
+  }
+}
+
 .selection-container__title-line {
   color: #000000;
   font-family: "Oswald", "Arial", sans-serif;
@@ -63,6 +118,10 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .selection-container__form-type {
@@ -71,6 +130,11 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 46%;
+  }
 }
 
 .selection-container__form-type-contacts {
@@ -85,6 +149,12 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    white-space: nowrap;
+  }
 }
 
 .selection-container__form-type-input {
@@ -105,6 +175,12 @@
 
   &:hover {
     border: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .selection-container__form-type-input {
+    width: 100%;
   }
 }
 
@@ -130,14 +206,21 @@
   stroke: #ff8282;
 }
 
-
 .selection-container__tel {
   width: 200px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .selection-container__information {
   margin-top: 24px;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .selection-container__information::before {
@@ -168,11 +251,21 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .selection-container__form-textarea {
+    margin-top: 78px;
+  }
+}
+
 .selection-container__block-add {
   margin: 23px 0 0;
   border: none;
   position: relative;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .selection-container__block-add::before {
@@ -190,6 +283,13 @@
   justify-content: center;
   align-items: center;
   margin: 34px 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .selection-container__submit {
@@ -213,6 +313,23 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .selection-container__submit {
+    margin-right: 60px;
+    width: 284px;
+    padding: 14px 65px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-container__submit {
+    width: 570px;
+    margin-right: 80px;
+  }
+}
+
 .selection-container__legend {
   color: #000000;
   text-align: center;
@@ -222,8 +339,35 @@
   font-weight: 400;
   line-height: 16px;
   padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    font-size: 16px;
+  }
 }
 
 .selection-container__background {
   background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basicwhite;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-container__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-container__form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 76px;
+  }
 }
