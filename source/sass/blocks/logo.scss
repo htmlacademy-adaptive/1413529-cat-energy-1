@@ -6,6 +6,13 @@
   justify-content: center;
 }
 
+@media (min-width: $tablet-width) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .logo__icon {
   display: inline-block;
   margin-right: 56px;
@@ -13,6 +20,18 @@
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__icon {
+    display: inline-block;
+    margin-right: 16px;
+    transition: opacity 0.4s, visibility 0.4s;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

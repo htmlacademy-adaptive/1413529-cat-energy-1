@@ -12,6 +12,23 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list {
+    display: flex;
+    margin-top: 57px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .form-list__mark {
@@ -53,4 +70,11 @@
   height: 26px;
   content: "";
   left: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list__item {
+    width: 46%;
+    margin-bottom: 32px;
+  }
 }
