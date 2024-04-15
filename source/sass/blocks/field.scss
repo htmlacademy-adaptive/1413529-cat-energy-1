@@ -25,6 +25,8 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 13px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -46,6 +48,13 @@
 
   &:hover {
     border: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field__text-input {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -103,6 +112,13 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .field__mark {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .field__text-checked {
   display: inline-block;
   padding-left: 45px;
@@ -125,6 +141,14 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .field__text-checked {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 65px;
+  }
+}
+
 .field__checked[type="radio"]:checked + .field__mark::before,
 .field__checked[type="radio"]:checked + .field__mark::after {
   background-image: url("../../img/radio-button-active.svg");
@@ -135,4 +159,12 @@
   content: "";
   top: 7px;
   left: 7px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/radiobutton-active-tablet.svg");
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 10px;
+  }
 }

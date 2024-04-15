@@ -1,4 +1,8 @@
 .main-container {
   background-color: $basicwhite;
   flex-grow: 1;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
