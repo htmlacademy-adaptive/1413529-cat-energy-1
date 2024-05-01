@@ -30,13 +30,6 @@
   }
 }
 
-.main-navigation__list {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-    position: static;
-  }
-}
-
 .main-navigation__toggle {
   background-image: url("../../img/icons/button-open-menu.svg");
   background-repeat: no-repeat;
