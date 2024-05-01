@@ -52,26 +52,6 @@
   content: "";
 }
 
-.slider::before {
-  position: absolute;
-  content: "";
-  width: 4px;
-  height: 256px;
-  border-radius: 2px;
-  background-color: #666666;
-  left: 158px;
-  z-index: 1;
-
-  @media (min-width: $tablet-width) {
-    height: 512px;
-    left: 352px;
-
-    @media (min-width: $desktop-width) {
-      left: 405px;
-    }
-  }
-}
-
 .slider:hover::before {
   background-color: #68b738;
 }

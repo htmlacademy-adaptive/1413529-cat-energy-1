@@ -19,6 +19,23 @@
   }
 }
 
+.slider-range__button::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: #666666;
+  left: 17px;
+  top: -100px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    top: -225px;
+  }
+}
+
 .slider-range__button-image {
   stroke: #666666;
   fill: #ffffff;

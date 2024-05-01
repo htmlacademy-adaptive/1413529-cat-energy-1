@@ -11,11 +11,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/background-blur-cat-desktop.jpg");
+    background-image: url("../../img/index-background-catdesktop.jpg");
     background-repeat: no-repeat;
     background-position: calc(100% + 70px) 0;
     background-size: 720px 694px;
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection::before {
+    content: "";
+    width: 650px;
+    height: 694px;
+    display: block;
+    position: absolute;
+    background-color: rgba(104, 183, 56, 0.85);
+    right: 0;
   }
 }
 
@@ -63,7 +75,7 @@
 
 @media (min-width: $desktop-width) {
   .selection__description {
-    padding: 110px 0 40px 0;
+    padding: 190px 0 40px 0;
     width: 550px;
   }
 }
@@ -124,26 +136,32 @@
 
 @media (min-width: $tablet-width) {
   .selection__main-button {
+    position: absolute;
     width: 244px;
     padding: 14px 26px;
-    position: absolute;
-    content: "";
-    bottom: 530px;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+    top: 290px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection__main-button {
-    right: 925px;
+    position: static;
+    margin-top: 21px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .selection__main-button--wrapper {
     padding-left: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__main-button--wrapper {
+    padding-left: 0;
   }
 }
 
@@ -166,7 +184,7 @@
 @media (min-width: $desktop-width) {
   .selection__catalog {
     display: flex;
-    margin-top: 82px;
+    margin-top: 400px;
   }
 }
 
@@ -189,6 +207,29 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 57px;
     margin-bottom: 30px;
+  }
+}
+
+.selection__title--slim::before {
+  background-image: url("../../img/cat-black-slim.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+  position: absolute;
+  content: "";
+  left: 20px;
+  bottom: -6px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/cat-catalog-slim.svg");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 211px;
+    position: absolute;
+    content: "";
+    left: unset;
+    right: 50px;
+    bottom: -175px;
   }
 }
 
@@ -228,28 +269,6 @@
   }
 }
 
-.selection__title--slim::before {
-  background-image: url("../../img/cat-black-slim.svg");
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 53px;
-  position: absolute;
-  content: "";
-  left: 20px;
-  bottom: -6px;
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/cat-catalog-slim.svg");
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 211px;
-    position: absolute;
-    content: "";
-    left: 445px;
-    bottom: -175px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .selection__title--slim::before {
     background-image: url("../../img/catblack-slim-desktop.svg");
@@ -280,8 +299,9 @@
     height: 200px;
     position: absolute;
     content: "";
-    left: 411px;
+    left: unset;
     bottom: -175px;
+    right: 30px;
   }
 }
 
@@ -405,14 +425,22 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .selection__head-block {
-    position: relative;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .selection__head-block {
     padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__picture {
+    position: absolute;
+    content: "";
+    width: 552px;
+    height: 499px;
+    right: 330px;
+    top: 130px;
   }
 }

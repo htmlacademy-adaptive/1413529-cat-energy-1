@@ -13,15 +13,6 @@
 .container-wrapper__catalog {
   position: relative;
   margin-top: 25px;
-
-  &::before {
-    width: 54px;
-    border: 2px solid #68b738;
-    position: absolute;
-    content: "";
-    top: 40px;
-    right: -20px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -34,38 +25,5 @@
   .container-wrapper {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .container-wrapper__catalog::before {
-    width: 320px;
-    top: 45px;
-    right: -30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container-wrapper__catalog::before {
-    width: 952px;
-    right: -110px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .container-wrapper__catalog::after {
-    position: absolute;
-    content: "";
-    width: 30px;
-    top: 45px;
-    right: 710px;
-    border: 2px solid #68b738;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container-wrapper__catalog::after {
-    width: 70px;
-    right: 1340px;
   }
 }

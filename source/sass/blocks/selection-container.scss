@@ -29,7 +29,7 @@
     margin-top: 65px;
 
     @media (min-width: $desktop-width) {
-      margin-top: 74px;
+      margin-top: 150px;
     }
   }
 }
@@ -102,34 +102,34 @@
   margin-top: 26px;
   position: relative;
 
-  &::before {
-    width: 93px;
-    border: 2px solid #68b738;
-    position: absolute;
-    content: "";
-    top: 15px;
-    right: -20px;
-  }
+  // &::before {
+  //   width: 93px;
+  //   border: 2px solid #68b738;
+  //   position: absolute;
+  //   content: "";
+  //   top: 15px;
+  //   right: -20px;
+  // }
 }
 
-@media (min-width: $tablet-width) {
-  .selection-container__contacts::after {
-    position: absolute;
-    content: "";
-    width: 30px;
-    top: 20px;
-    right: 670px;
-    border: 2px solid #68b738;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .selection-container__contacts::after {
+//     position: absolute;
+//     content: "";
+//     width: 30px;
+//     top: 20px;
+//     right: 670px;
+//     border: 2px solid #68b738;
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .selection-container__contacts::after {
-    width: 70px;
-    top: 20px;
-    right: 1340px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .selection-container__contacts::after {
+//     width: 70px;
+//     top: 20px;
+//     right: 1340px;
+//   }
+// }
 
 @media (min-width: $tablet-width) {
   .selection-container__contacts::before {
@@ -163,6 +163,7 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 35px;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -172,6 +173,90 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.selection-container__title-line--contacts::before {
+  width: 93px;
+  border: 2px solid #68b738;
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 146px;
+    top: 20px;
+    right: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 778px;
+    top: 20px;
+    right: -120px;
+  }
+}
+
+.selection-container__title-line--comments::before {
+  width: 159px;
+  border: 2px solid #68b738;
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -20px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    top: 20px;
+    right: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1108px;
+    top: 20px;
+    right: -120px;
+  }
+}
+
+
+.selection-container__title-line--additionally::before {
+  width: 139px;
+  border: 2px solid #68b738;
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 446px;
+    top: 20px;
+    right: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1078px;
+    top: 20px;
+    right: -120px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .selection-container__title-line::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    top: 20px;
+    left: -70px;
+    border: 2px solid #68b738;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-container__title-line::after {
+    width: 70px;
+    top: 20px;
+    left: -110px;
   }
 }
 
@@ -291,48 +376,6 @@
   }
 }
 
-.selection-container__information::before {
-  width: 159px;
-  border: 2px solid #68b738;
-  position: absolute;
-  content: "";
-  top: 15px;
-  right: -20px;
-
-  @media (min-width: $tablet-width) {
-    width: 476px;
-    top: 20px;
-    right: -70px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .selection-container__information::before {
-    width: 1170px;
-    top: 20px;
-    right: -120px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .selection-container__information::after {
-    position: absolute;
-    content: "";
-    width: 30px;
-    top: 20px;
-    right: 670px;
-    border: 2px solid #68b738;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .selection-container__information::after {
-    width: 70px;
-    top: 20px;
-    right: 1340px;
-  }
-}
-
 .selection-container__form-textarea {
   color: #444444;
   font-family: "Oswald", "Arial", sans-serif;
@@ -378,46 +421,6 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-  }
-}
-
-.selection-container__block-add::before {
-  width: 139px;
-  border: 2px solid #68b738;
-  position: absolute;
-  content: "";
-  top: 20px;
-  right: -20px;
-
-  @media (min-width: $tablet-width) {
-    width: 446px;
-    top: 20px;
-    right: -70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1120px;
-    top: 20px;
-    right: -120px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .selection-container__block-add::after {
-    position: absolute;
-    content: "";
-    width: 30px;
-    top: 20px;
-    right: 670px;
-    border: 2px solid #68b738;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .selection-container__block-add::after {
-    width: 70px;
-    top: 20px;
-    right: 1340px;
   }
 }
 
