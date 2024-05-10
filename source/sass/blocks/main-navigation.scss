@@ -1,6 +1,5 @@
 .main-navigation {
   background-color: #ffffff;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     min-width: 436px;
@@ -11,23 +10,27 @@
   }
 }
 
+.main-navigation--nojs {
+  width: 100%;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-navigation--nojs .main-navigation__toggle {
-    display: none;
+    background-image: url("../../img/icons/button-close-menu.svg");
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .main-navigation--nojs .main-navigation__wrapper {
-    position: static;
-    min-height: 0;
-  }
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
 }
 
-@media (max-width: $mobile-width-only) {
-  .main-navigation--nojs .main-navigation__list {
-    display: block;
-  }
+.main-navigation--nojs .main-navigation__wrapper-close {
+  display: block;
+  width: 100%;
+}
+
+.main-navigation__wrapper-close {
+  display: none;
 }
 
 .main-navigation__toggle {
@@ -55,8 +58,8 @@
   background-color: #ffffff;
   position: absolute;
   content: "";
-  top: 1px;
-  right: 0;
+  top: 20px;
+  right: 20px;
   border: none;
   background-size: contain;
 
@@ -65,7 +68,7 @@
   }
 }
 
-.main-navigation-opened .main-navigation__toggle:active::before {
+.main-navigation-opened.main-navigation__toggle:active::before {
   background-color: fade(#ffffff, 30%);
 }
 
@@ -76,17 +79,34 @@
   background-color: #ffffff;
   margin: 0;
   content: "";
-  right: -20px;
-  top: 35px;
-  padding-top: 15px;
-  width: 320px;
+  right: 0;
+  top: 100%;
+  padding-top: 0;
+  width: 100%;
   z-index: 2;
 }
 
-.main-navigation__wrapper-close {
-  display: none;
+@media (max-width: 767px) {
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
+}
 
-  @media (min-width: $tablet-width) {
+@media (max-width: 767px) {
+  .main-navigation--nojs .main-navigation__wrapper {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-navigation--nojs .main-navigation__list {
+    display: block;
+    position: static;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__wrapper {
     display: contents;
   }
 }
