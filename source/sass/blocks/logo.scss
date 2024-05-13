@@ -40,7 +40,7 @@
 }
 
 .logo__text {
-  transition: opacity 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
 
   &:hover {
     opacity: 0.8;

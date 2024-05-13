@@ -40,13 +40,15 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   cursor: pointer;
+  color: #68b738;
 
-  &:hover {
+  &:hover:focus {
     border: 1px solid #bababa;
   }
 
   &:disabled {
     border: 1px solid rgba(186, 186, 186, 0.3);
+    color: rgba(186, 186, 186, 0.3);
   }
 }
 
@@ -61,6 +63,11 @@
   display: inline-block;
   padding: 6px 0 6px 15px;
   overflow: hidden;
+  color: #000000;
+
+  &:hover:focus {
+    color: #000000;
+  }
 
   &:disabled {
     color: rgba(0, 0, 0, 0.3);

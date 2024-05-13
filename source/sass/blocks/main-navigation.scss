@@ -172,6 +172,42 @@
   }
 }
 
+@media (min-width: $mobile-width-only) {
+  .main-navigation__link:hover {
+    color: rgb(0, 0, 0, 0.4);
+  }
+}
+
+@media (min-width: $mobile-width-only) {
+  .main-navigation__link:active {
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__link:hover {
+    color: rgb(0, 0, 0, 0.4);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__link:active {
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__link:hover {
+    color: rgb(255, 255, 255, 0.4);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__link:active {
+    color: rgb(255, 255, 255);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-navigation__item:last-child {
     padding-right: 0;
@@ -189,8 +225,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-navigation__link--current::before {
+@media (min-width: $tablet-width) {
+  .main-navigation__link--current-catalog::before {
     position: absolute;
     bottom: -2px;
     height: 2px;
@@ -201,7 +237,40 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-navigation__list--index .main-navigation__link--current::before {
+  .main-navigation__link--current-catalog::before {
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    background-color: #68b738;
+    content: "";
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__link--current-programm::before {
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    background-color: #68b738;
+    content: "";
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__link--current-programm::before {
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    background-color: #68b738;
+    content: "";
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__item .main-navigation__link--current::before {
     position: absolute;
     bottom: -2px;
     height: 2px;
@@ -212,12 +281,36 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-navigation__item:hover .main-navigation__link--current::before {
+    background-color: rgb(255, 255, 255, 0.4);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__item:active .main-navigation__link--current::before {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media (min-width: $desktop-width) {
   .main-navigation__link-text {
     font-family: "Oswald", "Arial", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
     text-transform: uppercase;
     color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__link-text:hover {
+    color: rgb(0, 0, 0, 0.4);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__link-text:active {
+    color: rgb(0, 0, 0);
   }
 }

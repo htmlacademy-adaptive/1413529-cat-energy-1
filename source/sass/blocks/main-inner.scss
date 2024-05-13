@@ -15,9 +15,10 @@
   .main-inner {
     padding-left: 110px;
     padding-right: 110px;
-    margin-top: 0;
     width: 100%;
-    margin-bottom: 87px;
+    padding-bottom: 87px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 

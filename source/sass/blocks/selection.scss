@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../../img/index-background-catdesktop.jpg");
     background-repeat: no-repeat;
-    background-position: calc(100% + 70px) 0;
+    background-position: 100% 0;
     background-size: 720px 694px;
     padding-bottom: 0;
   }
@@ -22,7 +22,7 @@
 @media (min-width: $desktop-width) {
   .selection::before {
     content: "";
-    width: 650px;
+    width: 720px;
     height: 694px;
     display: block;
     position: absolute;
