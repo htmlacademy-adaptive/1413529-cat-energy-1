@@ -18,6 +18,9 @@
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
+    justify-content: space-between;
+    row-gap: 32px;
+    column-gap: 12px;
   }
 }
 
@@ -37,13 +40,22 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   cursor: pointer;
+  color: #68b738;
 
-  &:hover {
+  &:hover:focus {
     border: 1px solid #bababa;
   }
 
   &:disabled {
     border: 1px solid rgba(186, 186, 186, 0.3);
+    color: rgba(186, 186, 186, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list__mark {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -51,9 +63,22 @@
   display: inline-block;
   padding: 6px 0 6px 15px;
   overflow: hidden;
+  color: #000000;
+
+  &:hover:focus {
+    color: #000000;
+  }
 
   &:disabled {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list__text {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px 0 5px 20px;
   }
 }
 
@@ -70,11 +95,19 @@
   height: 26px;
   content: "";
   left: 2px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/icons/tick-tablet.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    left: 8px;
+    top: -9px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form-list__item {
     width: 46%;
-    margin-bottom: 32px;
   }
 }

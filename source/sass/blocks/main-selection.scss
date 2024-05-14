@@ -8,11 +8,12 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-selection {
+  @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
+    padding-bottom: 79px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

@@ -1,5 +1,6 @@
 .main-header {
   display: flex;
+  flex-wrap: wrap;
   padding: 13px 20px 0 20px;
   width: 100%;
   background-color: $basicwhite;
@@ -7,6 +8,7 @@
   align-items: center;
   padding-bottom: 14px;
   border-bottom: 1px solid #d9d9d9;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -16,11 +18,17 @@
     background-color: $basicwhite;
     border-bottom: none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-header {
+  @media (min-width: $desktop-width) {
     padding: 55px 110px 0 110px;
+    position: absolute;
+    content: "";
+    z-index: 2;
+    background: none;
+    max-width: 1440px;
+    margin: 0 auto;
     width: 100%;
+    right: 0;
+    left: 0;
   }
 }
