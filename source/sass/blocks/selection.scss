@@ -1,9 +1,12 @@
 .selection {
-  background-image: url("../../img/background-blur-cat.jpg");
+  background-image: url("../../img/background-cat-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 320px auto;
   padding-bottom: 20px;
-  background-color: $basicwhite;
+  background-position: 100% 0;
+  max-width: 320px;
+  position: relative;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -11,11 +14,42 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/index-background-catdesktop.jpg");
+    background-image: url("../../img/background-cat-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: 720px 694px;
     padding-bottom: 0;
+    max-width: 1440px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .selection {
+    background-image: url("../../img/background-cat-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-cat-desktop@2x.jpg");
+    }
+  }
+}
+
+.selection::before {
+  content: "";
+  width: 320px;
+  height: 302px;
+  display: block;
+  position: absolute;
+  background-color: rgba(104, 183, 56, 0.85);
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .selection::before {
+    background-color: #ffffff;
   }
 }
 
@@ -103,6 +137,7 @@
     text-align: left;
     text-transform: uppercase;
     padding-left: 90px;
+    padding-right: 0;
     margin-bottom: 21px;
   }
 }
@@ -178,6 +213,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+    width: 708px;
   }
 }
 
@@ -185,6 +221,7 @@
   .selection__catalog {
     display: flex;
     margin-top: 400px;
+    width: 1220px;
   }
 }
 
@@ -425,12 +462,24 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .selection__head-block {
+    display: inline-block;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .selection__head-block {
     padding-left: 50px;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .selection__picture {
+    width: 709px;
+    height: 609px;
   }
 }
 
