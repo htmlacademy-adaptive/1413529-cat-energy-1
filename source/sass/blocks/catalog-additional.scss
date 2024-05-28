@@ -255,7 +255,7 @@
 }
 
 .catalog-additional__promo {
-  background-image: url("../../img/cat-bag-gift.jpg");
+  background-image: url("../../img/gift-bag-mobile.jpg");
   background-repeat: no-repeat;
   width: 280px;
   height: 290px;
@@ -272,12 +272,28 @@
     height: 80px;
     top: 60px;
     left: 100px;
+    z-index: 2;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/gift-bag-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.catalog-additional__promo::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(104, 183, 56, 0.85);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-additional__promo {
-    background-image: url("../../img/background-cat-tablet.jpeg");
+    background-image: url("../../img/gift-bag-tablet.jpg");
     background-repeat: no-repeat;
     width: 707px;
     height: 200px;
@@ -286,14 +302,33 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .catalog-additional__promo {
-    background-image: url("../../img/cat-bag-giftdesktop.jpeg");
-    width: 256px;
-    height: 288px;
-    margin: 30px 0 0 80px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-bag-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-additional__promo {
+    background-image: url("../../img/gift-bag-desktop.jpg");
+    width: 245px;
+    height: 288px;
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-additional__promo {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-bag-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .catalog-additional__promo::before {
@@ -317,6 +352,8 @@
   text-align: center;
   margin: 0;
   padding: 187px 61px 43px 58px;
+  z-index: 5;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -366,5 +403,6 @@
     display: flex;
     align-items: center;
     margin-top: 44px;
+    justify-content: space-between;
   }
 }

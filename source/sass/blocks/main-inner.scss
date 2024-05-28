@@ -1,13 +1,13 @@
 .main-inner {
-  margin-top: 27px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 27px 20px 0 20px;
   flex-grow: 1;
+  max-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 65px;
+    padding: 65px 30px 0 30px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 }
 

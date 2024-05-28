@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-  padding: 0 20px 40px 20px;
+  padding: 0 0 40px;
 
   @media (min-width: $tablet-width) {
     margin-top: 99px;
@@ -18,7 +18,7 @@
     margin-left: auto;
     margin-top: 0;
     height: 512px;
-    padding: 0 0 0 224px;
+    padding: 0;
   }
 }
 
@@ -58,4 +58,11 @@
 
 .slider:active::before {
   background-color: #5eaa2f;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__image {
+    width: 560px;
+    height: 512px;
+  }
 }

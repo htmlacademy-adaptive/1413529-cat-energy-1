@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/16.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -49,9 +53,9 @@
           </p>
           <p class="selection__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source srcset="./img/index-background-desktop.png" media="(min-width: 1440px)">
-            <source srcset="./img/index-background-tablet.png" media="(min-width: 768px)">
-            <img class="selection__picture" src="./img/index-background-mobile.png"
+            <source media="(min-width: 1440px)" srcset="./img/index-background-desktop@1x.png 1x, ./img/index-background-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/index-background-tablet@1x.png 1x, ./img/index-background-tablet@2x.png 2x">
+            <img class="selection__picture" src="./img/index-background-mobile@1x.png" srcset="./img/index-background-mobile@2x.png 2x" width="280" height="270"
               alt="Продукт питания со вкусом курицы Pro">
           </picture>
           <div class="selection__main-button--wrapper">
@@ -105,7 +109,7 @@
                 </g>
                 <defs>
                   <clipPath id="clip0_95_18">
-                    <rect width="30" height="32" fill="white" transform="translate(15 14)" />
+                    <rect width="30" height="32" fill="white" transform="translate(15 14)"/>
                   </clipPath>
                 </defs>
               </svg>
@@ -136,7 +140,7 @@
             <div class="advantages__picture">
               <svg aria-hidden="true" focusable="false" width="60" height="60" viewBox="0 0 60 60" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <rect width="60" height="60" fill="#68B738" />
+                <rect width="60" height="60" fill="#68B738"/>
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M36.1173 15.0761C36.491 14.9214 36.9211 15.0069 37.2071 15.2929C38.1156 16.2014 39.3038 18.1706 40.2659 21.2108C41.2373 24.2804 42 28.5081 42 34C42 34.5523 41.5523 35 41 35H37.5V44C37.5 44.5523 37.0523 45 36.5 45C35.9477 45 35.5 44.5523 35.5 44V16C35.5 15.5956 35.7436 15.2309 36.1173 15.0761ZM37.5 33H39.9912C39.9053 28.1836 39.2051 24.4875 38.3591 21.8142C38.0807 20.9346 37.7885 20.1715 37.5 19.519V33Z"
                   fill="white"/>
@@ -205,15 +209,15 @@
         <div class="slider">
           <div class="slider__picture slider__picture--before">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/slider-cat-before-tablet.png">
-              <img class="slider__image slider__image--fat" src="./img/slider-cat-before-mob.png"
+              <source media="(min-width: 768px)" srcset="./img/slider-before-tablet@1x.png 1x, ./img/slider-before-tablet@2x.png 2x">
+              <img class="slider__image slider__image--fat" src="./img/slider-before-mobile@1x.png" srcset="./img/slider-before-mobile@2x.png 2x" width="280" height="256"
                 alt="Результат до толстенький котик.">
             </picture>
           </div>
           <div class="slider__picture slider__picture--after">
             <picture>
-              <source srcset="img/slider-cat-after-tablet.png" media="(min-width: 768px)">
-              <img class="slider__image slider__image--slim" src="./img/slider-cat-after-mob.png"
+              <source media="(min-width: 768px)" srcset="./img/slider-after-tablet@1x.png 1x, ./img/slider-after-tablet@2x.png 2x">
+              <img class="slider__image slider__image--slim" src="./img/slider-after-mobile@1x.png" srcset="./img/slider-after-mobile@2x.png 2x" width="280" height="256"
                 alt="Результат после худенький котик.">
             </picture>
           </div>
