@@ -240,6 +240,13 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__icon-plus {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .catalog__add-text {
   margin: 0;
 }
