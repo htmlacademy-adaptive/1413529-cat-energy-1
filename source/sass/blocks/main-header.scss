@@ -1,13 +1,12 @@
 .main-header {
   display: flex;
   flex-wrap: wrap;
-  padding: 13px 20px 0 20px;
+  padding: 13px 21px 11px 20px;
   width: 100%;
   background-color: $basicwhite;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 14px;
-  border-bottom: 1px solid #d9d9d9;
+  // border-bottom: 1px solid #d9d9d9;
   position: relative;
   max-width: 320px;
   margin: 0 auto;
@@ -15,7 +14,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 25px 30px 0 30px;
+    padding: 25px 34px 0 30px;
     max-width: 768px;
     background-color: $basicwhite;
     border-bottom: none;

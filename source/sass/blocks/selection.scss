@@ -103,13 +103,13 @@
     text-align: left;
     margin: 0;
     width: 550px;
-    padding: 65px 0 40px 90px;
+    padding: 60px 0 40px 89px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection__description {
-    padding: 190px 0 40px 0;
+    padding: 225px 0 40px 26px;
     width: 550px;
   }
 }
@@ -125,7 +125,7 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
-  padding: 0 20px 0 20px;
+  padding: 0 27px 0 24px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -138,13 +138,13 @@
     text-transform: uppercase;
     padding-left: 90px;
     padding-right: 0;
-    margin-bottom: 21px;
+    margin-bottom: 23px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection__slogan {
-    padding-left: 0;
+    padding-left: 30px;
   }
 }
 
@@ -184,7 +184,7 @@
 @media (min-width: $desktop-width) {
   .selection__main-button {
     position: static;
-    margin-top: 21px;
+    margin-top: 28px;
   }
 }
 
@@ -196,7 +196,7 @@
 
 @media (min-width: $desktop-width) {
   .selection__main-button--wrapper {
-    padding-left: 0;
+    padding-left: 30px;
   }
 }
 
@@ -220,7 +220,7 @@
 @media (min-width: $desktop-width) {
   .selection__catalog {
     display: flex;
-    margin-top: 400px;
+    margin-top: 265px;
     width: 1220px;
   }
 }
@@ -232,6 +232,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    gap: 0 80px;
+    flex-wrap: wrap;
   }
 }
 
@@ -265,14 +267,14 @@
     position: absolute;
     content: "";
     left: unset;
-    right: 50px;
-    bottom: -175px;
+    right: 63px;
+    bottom: -154px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection__item {
-    width: 48%;
+    width: 570px;
     padding-bottom: 55px;
     margin-bottom: 0;
   }
@@ -297,7 +299,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 77px 0 24px 53px;
+    padding: 77px 0 22px 53px;
 
     @media (min-width: $desktop-width) {
       text-align: center;
@@ -314,8 +316,8 @@
     height: 106px;
     position: absolute;
     content: "";
-    left: 50px;
-    bottom: 40px;
+    left: 52px;
+    bottom: 38px;
   }
 }
 
@@ -326,8 +328,8 @@
   height: 50px;
   position: absolute;
   content: "";
-  left: 10px;
-  bottom: -6px;
+  left: 13px;
+  bottom: -8px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/cat-catalog-pro.svg");
@@ -337,7 +339,7 @@
     position: absolute;
     content: "";
     left: unset;
-    bottom: -175px;
+    bottom: -155px;
     right: 30px;
   }
 }
@@ -350,14 +352,14 @@
     height: 100px;
     position: absolute;
     content: "";
-    left: 30px;
-    bottom: 40px;
+    left: 33px;
+    bottom: 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection__title--weight {
-    padding-left: 40px;
+    padding-left: 70px;
   }
 }
 
@@ -369,7 +371,7 @@
   font-weight: 400;
   line-height: 18px;
   margin: 0;
-  padding: 29px 33px 38px 20px;
+  padding: 29px 33px 40px 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -380,14 +382,14 @@
     font-weight: 400;
     line-height: 24px;
     margin: 0;
-    padding: 24px 316px 52px 52px;
+    padding: 0 316px 52px 52px;
     position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection__text {
-    padding: 0 61px 23px 52px;
+    padding: 0 61px 28px 52px;
   }
 }
 
@@ -406,8 +408,8 @@
 }
 
 .selection__link {
+  display: block;
   color: #000000;
-  text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -417,6 +419,7 @@
   text-decoration: none;
   padding-left: 20px;
   position: relative;
+  text-align: left;
 
   &:hover {
     color: #000000;
@@ -434,8 +437,9 @@
   height: 12px;
   position: absolute;
   content: "";
-  right: -45px;
-  top: 7px;
+  right: unset;
+  top: 2px;
+  left: 120px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/icons/arrow-catalog-slim.svg");
@@ -444,8 +448,17 @@
     height: 12px;
     position: absolute;
     content: "";
-    right: -56px;
+    right: 492px;
     top: 9px;
+    left: unset;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__link::after {
+    right: 356px;
+    top: 9px;
+    left: unset;
   }
 }
 
@@ -490,6 +503,6 @@
     width: 552px;
     height: 499px;
     right: 330px;
-    top: 130px;
+    top: 145px;
   }
 }

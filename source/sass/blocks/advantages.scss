@@ -47,6 +47,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    margin-bottom: 76px;
+  }
+}
+
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +64,7 @@
     grid-template-columns: 247px 249px;
     margin: 0;
     padding: 0;
-    gap: 77px 153px;
+    gap: 75px 137px;
     position: relative;
   }
 }
@@ -74,7 +80,7 @@
 .advantages__item {
   display: flex;
   list-style-type: none;
-  padding-bottom: 26px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -99,8 +105,7 @@
   .advantages__item--1 {
     background-image: url("../../img/advant-item-1.svg");
     background-repeat: no-repeat;
-    background-size: 70px 221px;
-    background-position: 127px 0;
+    background-position: 125px 0;
   }
 }
 
@@ -108,8 +113,7 @@
   .advantages__item--2 {
     background-image: url("../../img/advant-item-2.svg");
     background-repeat: no-repeat;
-    background-size: 112px 221px;
-    background-position: 127px 0;
+    background-position: 125px 0;
   }
 }
 
@@ -117,8 +121,7 @@
   .advantages__item--3 {
     background-image: url("../../img/advant-item-3.svg");
     background-repeat: no-repeat;
-    background-size: 111px 221px;
-    background-position: 127px 0;
+    background-position: 125px 0;
   }
 }
 
@@ -126,8 +129,7 @@
   .advantages__item--4 {
     background-image: url("../../img/advant-item-4.svg");
     background-repeat: no-repeat;
-    background-size: 120px 221px;
-    background-position: 127px 0;
+    background-position: 125px 0;
   }
 }
 
@@ -142,6 +144,10 @@
 
 .advantages__item:last-child {
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+  }
 }
 
 .advantages__description {

@@ -5,6 +5,11 @@
   margin: 0;
   justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
 }
 
 .social__link {

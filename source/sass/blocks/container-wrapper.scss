@@ -1,7 +1,9 @@
 .container-wrapper {
-  margin-top: 25px;
+  margin-top: 43px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 84px;
   }
 
@@ -13,17 +15,14 @@
 .container-wrapper__catalog {
   position: relative;
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .container-wrapper__catalog {
     margin-top: 51px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .container-wrapper {
-    display: flex;
-    flex-wrap: wrap;
   }
 }

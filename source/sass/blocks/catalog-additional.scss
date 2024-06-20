@@ -11,17 +11,20 @@
   white-space: nowrap;
 
   @media (min-width: $tablet-width) {
-    width: 30%;
+    width: 220px;
     font-size: 20px;
     line-height: 20px;
     padding-top: 0;
     margin-bottom: 25px;
+    white-space: unset;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-additional__title-item {
-    margin-bottom: 0;
+    width: 245px;
+    margin: 0 81px 0 0;
+    white-space: unset;
   }
 }
 
@@ -56,12 +59,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 80px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     width: 73%;
     margin-right: 0;
+    padding-top: 45px;
   }
 }
 
@@ -137,6 +142,7 @@
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
+      padding-top: 10px;
     }
   }
 }
@@ -164,6 +170,7 @@
   .catalog-additional__title::before {
     width: 952px;
     right: -110px;
+    top: 32px;
   }
 }
 
@@ -171,6 +178,7 @@
   .catalog-additional__title::after {
     width: 70px;
     left: -110px;
+    top: 32px;
   }
 }
 
@@ -193,7 +201,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    white-space: nowrap;
+    width: 180px;
   }
 }
 
@@ -214,7 +222,6 @@
 @media (min-width: $desktop-width) {
   .catalog-additional__options--weight {
     text-align: left;
-    width: 10%;
   }
 }
 
@@ -245,12 +252,14 @@
     width: 100%;
     font-size: 16px;
     line-height: 20px;
+    display: block;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-additional__button {
     width: 244px;
+    display: block;
   }
 }
 
@@ -298,7 +307,12 @@
     width: 707px;
     height: 200px;
     position: relative;
-    margin: 70px 0 75px 0;
+    margin: 65px 0 75px 0;
+
+    &::before {
+      top: 58px;
+      left: 80px;
+    }
   }
 }
 
@@ -338,8 +352,8 @@
     background-repeat: no-repeat;
     width: 80px;
     height: 83px;
-    top: 60px;
-    left: 90px;
+    top: 53px;
+    left: 85px;
   }
 }
 
@@ -374,7 +388,7 @@
   .catalog-additional__promo-text {
     text-align: center;
     left: 50px;
-    top: 180px;
+    top: 185px;
   }
 }
 
@@ -384,7 +398,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 26px 38px 28px 38px;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
