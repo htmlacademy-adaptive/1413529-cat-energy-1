@@ -28,9 +28,10 @@
   .form-list {
     display: flex;
     margin-top: 57px;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
+    gap: 68px;
   }
 }
 
@@ -61,7 +62,7 @@
 
 .form-list__text {
   display: inline-block;
-  padding: 6px 0 6px 15px;
+  padding: 6px 0 6px 11px;
   overflow: hidden;
   color: #000000;
 
@@ -109,5 +110,11 @@
 @media (min-width: $tablet-width) {
   .form-list__item {
     width: 46%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list__item {
+    width: 245px;
   }
 }

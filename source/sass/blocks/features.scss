@@ -49,7 +49,7 @@
   margin: 0;
   text-align: left;
   margin-bottom: 40px;
-  padding-top: 25px;
+  padding-top: 19px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -58,7 +58,7 @@
     font-weight: 400;
     line-height: 60px;
     margin-bottom: 60px;
-    padding-top: 45px;
+    padding-top: 40px;
   }
 }
 
@@ -66,6 +66,8 @@
   .features__title {
     padding-top: 0;
     margin-bottom: 146px;
+    width: 435px;
+    z-index: 5;
   }
 }
 
@@ -85,19 +87,20 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__description {
-    width: 435px;
+    width: 430px;
     z-index: 3;
+    margin-bottom: 65px;
   }
 }
 
 .features__list {
-  margin-bottom: 34px;
+  // margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -114,6 +117,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 }
 
@@ -157,7 +161,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  padding: 14px 40px 18px 40px;
+  padding: 11px 40px 18px 40px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -174,7 +178,7 @@
 }
 
 .features__value--wrapper {
-  padding: 14px 21px 17px 20px;
+  padding: 11px 21px 17px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 15px 0 25px 0;
@@ -193,11 +197,13 @@
   line-height: 100%;
   position: absolute;
   content: "";
-  top: 48px;
+  top: 43px;
   width: 77px;
   right: 20px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .features__stats--weight .features__subtitle {
     background-color: $basicwhite;
     color: #444444;
     text-align: center;
@@ -214,10 +220,42 @@
   }
 }
 
+
+@media (min-width: $tablet-width) {
+  .features__stats--days .features__subtitle {
+    background-color: $basicwhite;
+    color: #444444;
+    text-align: center;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    position: absolute;
+    content: "";
+    top: 70px;
+    width: 135px;
+    right: 14px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .features__subtitle {
     background-color: #f2f2f2;
     top: 68px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .features__stats--weight .features__subtitle {
+    background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__stats--days .features__subtitle {
+    background-color: #f2f2f2;
   }
 }
 
@@ -250,6 +288,7 @@
     width: 325px;
     justify-content: space-between;
     text-align: left;
+    margin-top: 10px;
   }
 }
 
