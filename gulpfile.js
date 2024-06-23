@@ -6,11 +6,13 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
-import svgo from 'gulp-svgmin';
+import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import del from 'del';
+import htmlmin from 'gulp-htmlmin';
+import uglify from 'gulp-uglify-es';
 
 // Styles
 
@@ -31,6 +33,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -40,6 +43,9 @@ const scripts = () => {
   return gulp.src('source/js/script.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
+    // .pipe(rename("script.min.js"))
+    // .pipe(uglify())
+    // .pipe(gulp.dest("build/js"));
 }
 
 //Images
@@ -69,12 +75,12 @@ const createWebp = () => {
 
 const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-    .pipe(svgo())
+    .pipe(svgmin())
     .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
+    .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
