@@ -41,6 +41,7 @@
 
 .logo__text {
   transition: opacity 0.4s, visibility 0.4s;
+  padding-top: 2px;
 
   &:hover {
     opacity: 0.8;
@@ -49,4 +50,12 @@
 
 .logo__text:active {
   opacity: 0.6;
+}
+
+.logo__text--footer {
+  padding-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }

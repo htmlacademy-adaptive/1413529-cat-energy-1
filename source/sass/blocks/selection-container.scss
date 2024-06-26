@@ -328,7 +328,6 @@
   color: #ff8282;
 }
 
-
 .selection-container__image-box,
 .selection-container__image-connection {
   position: absolute;
@@ -336,6 +335,7 @@
   width: 20px;
   height: 20px;
   right: 10px;
+  fill: none;
 }
 
 .selection-container__form-type-input:focus + .selection-container__image-box {
@@ -345,7 +345,6 @@
 .selection-container__form-type-input:focus + .selection-container__image-connection {
   color: #68b738;
 }
-
 
 .selection-container__tel {
   width: 200px;

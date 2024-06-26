@@ -6,16 +6,18 @@
   color: #666666;
 }
 
-.copyright__link:focus .copyright__image {
-  color: #68b738;
+
+.copyright__link:hover .copyright__image{
+  fill: #68b738;
 }
 
-.copyright__link:hover .copyright__image {
-  color: #68b738;
+.copyright__link:focus .copyright__image {
+  fill: #68b738;
 }
+
 
 .copyright__link:active .copyright__image {
-  color: rgba(104, 183, 56, 0.3);
+  fill: rgba(104, 183, 56, 0.3);
 }
 
 .copyright__text {
