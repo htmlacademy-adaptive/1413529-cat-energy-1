@@ -29,6 +29,16 @@
   }
 }
 
+
+@media (min-width: $tablet-width) {
+  .selection {
+    @media (min-resolution: 2dppx) {
+      background-image: none;
+      border: none;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .selection {
     @media (min-resolution: 2dppx) {
