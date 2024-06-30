@@ -1,29 +1,24 @@
 .main-footer {
   background-color: #ffffff;
-  max-width: 320px;
+  width: 100%;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-    margin: 0 auto;
-    width: 100%;
-  }
+  overflow: hidden;
 
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
-    max-width: 1440px;
     margin: 0 auto;
   }
 }
 
 .main-footer__wrapper {
   padding: 0 20px;
-  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   gap: 11px;
   flex-wrap: wrap;
   position: relative;
+  max-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px;
@@ -34,6 +29,7 @@
     position: relative;
     justify-content: space-between;
     align-items: center;
+    max-width: 768px;
   }
 }
 
@@ -55,8 +51,14 @@
 
 .main-footer__copyright {
   margin-top: 10px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
+    margin-bottom: 0;
   }
+}
+
+.main-footer__container {
+  background-color: #f2f2f2;
 }

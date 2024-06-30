@@ -153,18 +153,17 @@
   }
 }
 
-.catalog__description-list--line {
+.catalog__description-list__line {
   margin: 0;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
-    margin: 0;
     padding-bottom: 1px;
   }
 }
 
-.catalog__description-list--value,
-.catalog__description-list--name {
+.catalog__description-list__value,
+.catalog__description-list__name {
   text-align: right;
 }
 
@@ -345,4 +344,22 @@
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.catalog__item-button__wrapper {
+  width: 100%;
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+  }
+}
+
+.catalog__card-link {
+  text-decoration: none;
+  cursor: pointer;
 }
