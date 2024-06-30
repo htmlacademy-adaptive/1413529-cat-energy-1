@@ -113,7 +113,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__item--1 {
+  .advantages__item--leaf {
     background-image: url("../../img/advant-item-1.svg");
     background-repeat: no-repeat;
     background-position: 125px 0;
@@ -121,7 +121,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__item--2 {
+  .advantages__item--powder {
     background-image: url("../../img/advant-item-2.svg");
     background-repeat: no-repeat;
     background-position: 125px 0;
@@ -129,7 +129,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__item--3 {
+  .advantages__item--eat {
     background-image: url("../../img/advant-item-3.svg");
     background-repeat: no-repeat;
     background-position: 125px 0;
@@ -137,13 +137,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__item--4 {
+  .advantages__item--clock {
     background-image: url("../../img/advant-item-4.svg");
     background-repeat: no-repeat;
     background-position: 125px 0;
   }
 }
-
 
 .advantages__picture {
   background-color: #68b738;
@@ -168,6 +167,10 @@
 
 .advantages__item:last-child {
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 57px;

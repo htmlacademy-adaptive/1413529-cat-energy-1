@@ -1,5 +1,5 @@
 .contacts {
-  background-color: $basicwhite;
+  background-color: $basic-white;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
@@ -32,7 +32,7 @@
     top: 95px;
     left: 110px;
     width: 565px;
-    background-color: $basicwhite;
+    background-color: $basic-white;
     padding: 60px 80px;
   }
 }
@@ -152,6 +152,6 @@
   background-color: #f2f2f2;
 
   @media (min-width: $desktop-width) {
-    background-color: $basicwhite;
+    background-color: $basic-white;
   }
 }

@@ -3,20 +3,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #666666;
+
 }
 
 .copyright__link:hover .copyright__image {
-  fill: #68b738;
+  stroke: #68b738;
 }
 
 .copyright__link:focus .copyright__image {
-  fill: #68b738;
+  stroke: #68b738;
 }
 
-
 .copyright__link:active .copyright__image {
-  fill: rgba(104, 183, 56, 0.3);
+  stroke: #68b738;
+  opacity: 0.3;
 }
 
 .copyright__text {
