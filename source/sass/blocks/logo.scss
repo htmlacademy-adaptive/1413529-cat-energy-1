@@ -16,40 +16,19 @@
 .logo__icon {
   display: inline-block;
   margin-right: 56px;
-  transition: opacity 0.4s, visibility 0.4s;
-
-  &:hover {
-    opacity: 0.8;
-  }
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
   .logo__icon {
     display: inline-block;
     margin-right: 12px;
-    transition: opacity 0.4s, visibility 0.4s;
-
-    &:hover {
-      opacity: 0.8;
-    }
   }
-}
-
-.logo__icon:active {
-  opacity: 0.6;
 }
 
 .logo__text {
-  transition: opacity 0.4s, visibility 0.4s;
   padding-top: 2px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
-.logo__text:active {
-  opacity: 0.6;
+  cursor: pointer;
 }
 
 .logo__text--footer {
@@ -58,4 +37,20 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }
+}
+
+.logo:hover > .logo__icon {
+  opacity: 0.8;
+}
+
+.logo:hover > .logo__text {
+  opacity: 0.8;
+}
+
+.logo:active > .logo__icon {
+  opacity: 0.6;
+}
+
+.logo:active > .logo__text {
+  opacity: 0.6;
 }

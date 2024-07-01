@@ -11,18 +11,3 @@
     margin-top: 0;
   }
 }
-
-.container-wrapper__catalog {
-  position: relative;
-  margin-top: 25px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 35px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container-wrapper__catalog {
-    margin-top: 51px;
-  }
-}

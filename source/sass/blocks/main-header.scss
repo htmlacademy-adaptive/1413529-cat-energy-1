@@ -2,23 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   padding: 13px 21px 11px 20px;
-  width: 100%;
-  background-color: $basicwhite;
+  background-color: $basic-white;
   justify-content: space-between;
   align-items: center;
-  // border-bottom: 1px solid #d9d9d9;
   position: relative;
   max-width: 320px;
   margin: 0 auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 25px 34px 0 30px;
     max-width: 768px;
-    background-color: $basicwhite;
+    background-color: $basic-white;
     border-bottom: none;
     margin: 0 auto;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {

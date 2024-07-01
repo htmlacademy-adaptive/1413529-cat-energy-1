@@ -493,14 +493,6 @@
   }
 }
 
-.selection-container__background {
-  background-color: #f2f2f2;
-
-  @media (min-width: $desktop-width) {
-    background-color: $basicwhite;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .selection-container__wrapper {
     display: flex;

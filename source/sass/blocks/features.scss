@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    background-color: $basicwhite;
+    background-color: $basic-white;
     border-top: 1px solid #e6e6e6;
   }
 }
@@ -11,18 +11,21 @@
 @media (min-width: $desktop-width) {
   .features {
     border-top: none;
-    margin-top: 69px;
-    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 69px;
   }
 }
 
 .features__wrapper {
+  max-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+    max-width: 768px;
   }
 }
 
@@ -36,6 +39,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 600px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -99,10 +104,8 @@
   }
 }
 
-.features__list {
-  // margin-bottom: 34px;
-
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .features__list {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
@@ -204,7 +207,7 @@
 
 @media (min-width: $tablet-width) {
   .features__stats--weight .features__subtitle {
-    background-color: $basicwhite;
+    background-color: $basic-white;
     color: #444444;
     text-align: center;
     font-family: "Lato", "Arial", sans-serif;
@@ -220,10 +223,9 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .features__stats--days .features__subtitle {
-    background-color: $basicwhite;
+    background-color: $basic-white;
     color: #444444;
     text-align: center;
     font-family: "Lato", "Arial", sans-serif;
@@ -245,7 +247,6 @@
     top: 68px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .features__stats--weight .features__subtitle {
@@ -308,6 +309,5 @@
   .features__background {
     height: 462px;
     background-color: #f2f2f2;
-    width: 1440px;
   }
 }
