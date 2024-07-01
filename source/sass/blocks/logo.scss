@@ -39,18 +39,18 @@
   }
 }
 
-.logo:hover>.logo__icon {
+.logo:hover > .logo__icon {
   opacity: 0.8;
 }
 
-.logo:hover>.logo__text {
+.logo:hover > .logo__text {
   opacity: 0.8;
 }
 
-.logo:active>.logo__icon {
+.logo:active > .logo__icon {
   opacity: 0.6;
 }
 
-.logo:active>.logo__text {
+.logo:active > .logo__text {
   opacity: 0.6;
 }

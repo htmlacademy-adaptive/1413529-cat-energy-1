@@ -122,7 +122,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
 
   @media (min-width: $tablet-width) {
     list-style-type: none;
@@ -149,6 +149,7 @@
   padding-bottom: 24px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+  // width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -180,7 +181,6 @@
     padding-bottom: 6px;
     position: relative;
     display: block;
-    max-width: 153px;
   }
 
   @media (min-width: $desktop-width) {

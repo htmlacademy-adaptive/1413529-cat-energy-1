@@ -1,7 +1,7 @@
 .selection {
   background-image: url("../../img/background-cat-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-size: 320px auto;
   padding-bottom: 20px;
   background-position: 50% 0;
   position: relative;
@@ -21,10 +21,8 @@
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: 711px 694px;
-    padding-bottom: 0;
     margin: 0 auto;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 0;
   }
 }
 
@@ -51,27 +49,28 @@
   }
 }
 
-.selection::before {
-  content: "";
+.selection::after {
   width: 100%;
   height: 302px;
   display: block;
   position: absolute;
+  content: "";
   background-color: rgba(104, 183, 56, 0.85);
   z-index: -1;
   right: 0;
+  top: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .selection::before {
+  .selection::after {
     background-color: #ffffff;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .selection::before {
+  .selection::after {
     content: "";
-    width: 50%;
+    width: 50vw;
     height: 694px;
     display: block;
     position: absolute;
@@ -96,6 +95,8 @@
 @media (min-width: $desktop-width) {
   .selection__wrapper {
     max-width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -562,7 +563,7 @@
     content: "";
     width: 552px;
     height: 499px;
-    right: 206px;
+    right: 220px;
     top: 145px;
   }
 }

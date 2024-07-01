@@ -6,18 +6,19 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
-
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 25px 34px 0 30px;
-    width: 768px;
+    max-width: 768px;
     background-color: $basic-white;
     border-bottom: none;
     margin: 0 auto;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {

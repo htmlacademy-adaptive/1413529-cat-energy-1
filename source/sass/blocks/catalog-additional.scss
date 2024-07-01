@@ -146,11 +146,11 @@
     padding-left: 40px;
   }
 
-    @media (min-width: $desktop-width) {
-      padding-left: 0;
-      padding-top: 10px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-top: 10px;
   }
+}
 
 @media (min-width: $tablet-width) {
   .catalog-additional__title::after {
@@ -408,7 +408,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-additional__item-wrapper{
+  .catalog-additional__item-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
