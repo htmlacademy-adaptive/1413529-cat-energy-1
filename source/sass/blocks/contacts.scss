@@ -167,3 +167,12 @@
     background-color: $basic-white;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    position: relative;
+    display: block;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
