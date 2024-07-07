@@ -19,6 +19,7 @@
     padding-bottom: 87px;
     max-width: 1440px;
     margin: 0 auto;
+    padding-top: 0;
   }
 }
 
@@ -39,13 +40,8 @@
 
 @media (min-width: $desktop-width) {
   .main-inner__title {
-    margin-top: 125px;
-    margin-bottom: 84px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog__item--substrate {
-    width: 20%;
+    margin: 0;
+    padding-top: 187px;
+    padding-bottom: 80px;
   }
 }

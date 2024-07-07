@@ -19,6 +19,8 @@
     border-bottom: none;
     margin: 0 auto;
     width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   @media (min-width: $desktop-width) {

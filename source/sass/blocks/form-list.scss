@@ -27,8 +27,7 @@
 @media (min-width: $desktop-width) {
   .form-list {
     display: flex;
-    margin-top: 57px;
-    // flex-wrap: nowrap;
+    margin-top: 8px;
     justify-content: space-between;
     width: 100%;
     gap: 68px;
@@ -42,15 +41,6 @@
   border: 1px solid #cdcdcd;
   cursor: pointer;
   color: #68b738;
-
-  &:hover:focus {
-    border: 1px solid #bababa;
-  }
-
-  &:disabled {
-    border: 1px solid rgba(186, 186, 186, 0.3);
-    color: rgba(186, 186, 186, 0.3);
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -65,14 +55,6 @@
   padding: 6px 0 6px 11px;
   overflow: hidden;
   color: #000000;
-
-  &:hover:focus {
-    color: #000000;
-  }
-
-  &:disabled {
-    color: rgba(0, 0, 0, 0.3);
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -83,8 +65,32 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-list__text {
+    padding: 5px 0 5px 16px;
+  }
+}
+
 .form-list__add {
   position: relative;
+
+  &:hover {
+    color: #222222;
+  }
+
+  &:active {
+    color: #222222;
+    opacity: 0.3;
+  }
+}
+
+.form-list__add:focus-within .form-list__mark {
+  outline: 1px solid #222222;
+}
+
+.form-list__add:disabled {
+  color: #222222;
+  opacity: 0.3;
 }
 
 .form-list__checkbox[type="checkbox"]:checked + .form-list__mark::before,
