@@ -71,7 +71,7 @@
     display: flex;
     width: 73%;
     margin-right: 0;
-    padding-top: 45px;
+    padding-top: 48px;
   }
 }
 
@@ -218,6 +218,10 @@
   @media (min-width: $tablet-width) {
     width: 95px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -267,6 +271,7 @@
   .catalog-additional__button {
     width: 244px;
     display: block;
+    margin-left: auto;
   }
 }
 
@@ -336,7 +341,7 @@
     background-image: url("../../img/gift-bag-desktop.jpg");
     width: 245px;
     height: 288px;
-    margin: 30px 0 0 0;
+    margin: 42px 0 0 0;
   }
 }
 
@@ -410,10 +415,11 @@
 @media (min-width: $desktop-width) {
   .catalog-additional__item-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     width: 100%;
     padding: 15px 0 15px 0;
+    align-items: center;
   }
 }
 
@@ -421,7 +427,7 @@
   .catalog-additional__list-wrapper {
     display: flex;
     align-items: center;
-    margin-top: 44px;
+    margin-top: 36px;
     justify-content: space-between;
   }
 }
@@ -431,12 +437,12 @@
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 35px;
+    margin-top: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-additional {
-    margin-top: 51px;
+    margin-top: 65px;
   }
 }
