@@ -8,11 +8,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 26px 0 30px 27px;
-    gap: 15px;
+    gap: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 0 30px 20px;
+    padding: 26px 0 30px 29px;
+    gap: 15px;
   }
 }
 
@@ -38,8 +39,16 @@
   .field-selection__mark {
     width: 40px;
     height: 40px;
+    transform: translateY(4px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field-selection__mark {
+    transform: translateY(1px);
+  }
+}
+
 
 .field-selection__text-checked {
   display: inline-block;
@@ -65,6 +74,13 @@
   }
 }
 
+
+@media (min-width: $desktop-width) {
+  .field-selection__text-checked {
+    padding-top: 10px;
+  }
+}
+
 .field-selection__checked[type="radio"]:checked + .field-selection__mark::before,
 .field-selection__checked[type="radio"]:checked + .field-selection__mark::after {
   background-image: url("../../img/radio-button-active.svg");
@@ -86,19 +102,22 @@
 }
 
 .field-selection__item:hover {
-  color: #222222;
+  color: #000000;
 }
 
 .field-selection__item:focus-within .field-selection__mark {
   outline: 1px solid #222222;
 }
 
-.field-selection__item:active {
-  color: #222222;
+.field-selection__item:hover .field-selection__mark {
+  border: 1px solid #bababa;
+}
+
+.field-selection__checked:disabled + .field-selection__mark + .field-selection__text-checked {
   opacity: 0.3;
 }
 
-.field-selection__item:disabled {
-  color: #222222;
+.field-selection__checked:disabled + .field-selection__mark::before,
+.field-selection__checked:disabled + .field-selection__mark::after {
   opacity: 0.3;
 }

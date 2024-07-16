@@ -26,7 +26,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 65px;
+    margin-top: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,14 +49,14 @@
 
   @media (min-width: $tablet-width) {
     width: 333px;
-    margin-top: 48px;
-    margin-bottom: 66px;
+    margin-top: 54px;
+    margin-bottom: 64px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
+    margin-top: 52px;
   }
 }
 
@@ -64,13 +64,14 @@
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 68px;
+    padding-bottom: 65px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection-container__data {
-    width: 46%;
+    width: 568px;
+    padding-bottom: 78px;
   }
 }
 
@@ -90,7 +91,7 @@
 
 @media (min-width: $desktop-width) {
   .selection-container__data-selection {
-    width: 46%;
+    width: 47%;
   }
 }
 
@@ -179,7 +180,8 @@
 
 @media (min-width: $tablet-width) {
   .selection-container__title-line--contacts {
-    margin-bottom: 73px;
+    margin-bottom: 77px;
+    margin-top: -6px;
   }
 }
 
@@ -196,7 +198,6 @@
   content: "";
   top: 15px;
   right: -20px;
-
 
   @media (min-width: $tablet-width) {
     width: 476px;
@@ -247,6 +248,12 @@
 @media (min-width: $tablet-width) {
   .selection-container__title-line--additionally {
     margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-container__title-line--additionally {
+    margin-bottom: 52px;
   }
 }
 
@@ -324,7 +331,7 @@
   width: 217px;
 
   &:focus {
-    border: 2px solid #444444;
+    border: 1px solid #444444;
   }
 
   &:hover {
@@ -480,11 +487,11 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 48px 0 60px 0;
+    margin: 46px 0 60px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 56px 0 0 0;
+    margin: 54px 0 0 0;
   }
 }
 
@@ -512,9 +519,9 @@
 
 @media (min-width: $tablet-width) {
   .selection-container__submit {
-    margin-right: 60px;
+    margin-right: 57px;
     width: 284px;
-    padding: 14px 65px;
+    padding: 16px 65px;
     font-size: 20px;
     line-height: 26px;
   }

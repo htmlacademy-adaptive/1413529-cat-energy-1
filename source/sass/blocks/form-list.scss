@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     row-gap: 32px;
-    column-gap: 12px;
+    margin-right: -10px;
   }
 }
 
@@ -50,18 +50,24 @@
   }
 }
 
+.form-list__mark:disabled {
+  color: #222222;
+  opacity: 0.3;
+}
+
 .form-list__text {
   display: inline-block;
   padding: 6px 0 6px 11px;
   overflow: hidden;
   color: #000000;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
   .form-list__text {
     font-size: 20px;
     line-height: 30px;
-    padding: 5px 0 5px 20px;
+    padding: 5px 0 5px 16px;
   }
 }
 
@@ -89,7 +95,7 @@
 }
 
 .form-list__add:disabled {
-  color: #222222;
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -123,4 +129,17 @@
   .form-list__item {
     width: 245px;
   }
+}
+
+.form-list__add:hover .form-list__mark {
+  border: 1px solid #bababa;
+}
+
+.form-list__checkbox:disabled + .form-list__mark + .form-list__text {
+  opacity: 0.3;
+}
+
+.form-list__checkbox:disabled + .form-list__mark::before,
+.form-list__checkbox:disabled + .form-list__mark::after {
+  opacity: 0.3;
 }
